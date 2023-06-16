@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +7,7 @@
     <title>Student App</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
 </head>
 
 <body>
@@ -20,6 +23,32 @@
 
         <!--Page heading and content-->
         <h1>College Application Students</h1>
+        <hr />
+
+        <!--Homepage body and content-->
+        <table class="cell-border hover order-column" id="studentsTable">
+            <thead>
+                <tr>
+                    <!-- Table Headings-->
+                    <th style="width:25%" onclick="sortTable(1)">Student Name</th>
+                    <th style="width:25%" onclick="sortTable(2)">Student Email</th>
+                    <th style="width:25%" onclick="sortTable(3)">Student Course</th>
+                    <th style="width:25%" onclick="sortTable(4)">Student Term</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in student_list %}
+                <tr>
+                    <!-- Table Data-->
+                    <td>{{ student.stu_name }}</td>
+                    <td>{{ student.stu_email }}</td>
+                    <td>{{ student.stu_course }}</td>
+                    <td>{{ student.stu_term }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br />
         <hr />
 
         <!--Footer class for bottom of page-->
