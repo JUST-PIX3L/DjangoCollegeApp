@@ -1,6 +1,6 @@
 # DjangoCollegeApp
-College Application built as part of the Django learning series which can be followed at the below URLs:
-[LinkedIn]()
+College Application built as part of the Django learning series which can be followed at the below URLs: <br>
+[LinkedIn]() <br>
 [Medium]()
 
 I will try to keep the series releasing on a fortnightly basis so that people can keep interest without feeling to bombarded with information.
