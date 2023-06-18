@@ -12,8 +12,9 @@ The proposed chapters for the project can be seen below with the intention being
 * Chapter 5 - Render Model Data on HTML Page + Basic CSS
 * Chapter 6 - Adding new Pages with Templates
 * Chatper 7 - Improving our View Code
-* Chapter 8 - Using Datatables 
+* Chapter 8 - Updating to a Datatable 
 * Chapter 9 - Django Unit Testing
 * Chapter 10 - Using Flake8 to check Python Code Formatting
+* Chapter 11 - Data Entry Form Pages
 
 One final thing I am not a Developer by any means I am a Testing Consultant with some knowledge of basic Development, so while you might be following this series to learn so am I. I would just like to take people along this journey with me. If there are other topic that are of interest to you then please do reach out and let me know we may be able to incorporate that in future training sessions. 
