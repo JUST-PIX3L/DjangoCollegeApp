@@ -30,16 +30,18 @@
             <thead>
                 <tr>
                     <!-- Table Headings-->
-                    <th style="width:25%" onclick="sortTable(1)">Student Name</th>
-                    <th style="width:25%" onclick="sortTable(2)">Student Email</th>
-                    <th style="width:25%" onclick="sortTable(3)">Student Course</th>
-                    <th style="width:25%" onclick="sortTable(4)">Student Term</th>
+                    <th style="width:10%"></th>
+                    <th style="width:22%" onclick="sortTable(1)">Student Name</th>
+                    <th style="width:22%" onclick="sortTable(2)">Student Email</th>
+                    <th style="width:22%" onclick="sortTable(3)">Student Course</th>
+                    <th style="width:22%" onclick="sortTable(4)">Student Term</th>
                 </tr>
             </thead>
             <tbody>
                 {% for student in student_list %}
                 <tr>
                     <!-- Table Data-->
+                    <td class="students_info" id="students_info" onclick="window.location.href = 'students_info.html';" style="text-align:center;"> &#10148; </td>
                     <td>{{ student.stu_name }}</td>
                     <td>{{ student.stu_email }}</td>
                     <td>{{ student.stu_course }}</td>

@@ -1,0 +1,40 @@
+{% extends "base_info.html" %}
+{% load static %}
+
+<body>
+    <div class="content">
+
+        <!--Block for individual page content-->
+        {% block content %}
+
+        <h3>Lecturer {{lecturer_info.lec_name}} Information</h3>
+        <form action="/action_page.php">
+            <label class="lbdata">Lecturer Name:......</label>
+            <input type="text" class="frmdata" value="{{lecturer_info.lec_name}}" disabled><br>
+
+            <label class="lbdata">Lecturer D.O.B:......</label>
+            <input type="text" class="frmdata" value="{{lecturer_info.lec_dob}}" disabled><br>
+
+            <label class="lbdata">Lecturer Email:......</label>
+            <input type="text" class="frmdata" value="{{lecturer_info.lec_email}}" disabled><br>
+
+            <label class="lbdata">Lecturer Phone:......</label>
+            <input type="text" class="frmdata" value="{{lecturer_info.lec_phone}}" disabled><br>
+
+            <label class="lbdata">Lecturer Address:......</label>
+            <input type="text" class="frmdata" value="{{lecturer_info.lec_address}}" disabled><br>
+
+            <label class="lbdata">Lecturer City:......</label>
+            <input type="text" class="frmdata" value="{{lecturer_info.lec_city}}" disabled><br>
+
+            <label class="lbdata">Lecturer Postcode:......</label>
+            <input type="text" class="frmdata" value="{{lecturer_info.lec_postcode}}" disabled><br>
+
+            <label class="lbdata">Lecturer Course:......</label>
+            <input type="text" class="frmdata" value="{{lecturer_info.lec_course}}" disabled><br>
+        </form>
+
+        {% endblock content %}
+
+    </div>
+</body>

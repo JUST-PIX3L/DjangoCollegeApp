@@ -1,0 +1,43 @@
+{% extends "base_info.html" %}
+{% load static %}
+
+<body>
+    <div class="content">
+
+        <!--Block for individual page content-->
+        {% block content %}
+
+        <h3>Student {{student_info.stu_name}} Information</h3>
+        <form action="/action_page.php">
+            <label class="lbdata">Student Name:......</label>
+            <input type="text" class="frmdata" value="{{student_info.stu_name}}" disabled><br>
+
+            <label class="lbdata">Student D.O.B:......</label>
+            <input type="text" class="frmdata" value="{{student_info.stu_dob}}" disabled><br>
+
+            <label class="lbdata">Student Email:......</label>
+            <input type="text" class="frmdata" value="{{student_info.stu_email}}" disabled><br>
+
+            <label class="lbdata">Student Phone:......</label>
+            <input type="text" class="frmdata" value="{{student_info.stu_phone}}" disabled><br>
+
+            <label class="lbdata">Student Address:......</label>
+            <input type="text" class="frmdata" value="{{student_info.stu_address}}" disabled><br>
+
+            <label class="lbdata">Student City:......</label>
+            <input type="text" class="frmdata" value="{{student_info.stu_city}}" disabled><br>
+
+            <label class="lbdata">Student Postcode:......</label>
+            <input type="text" class="frmdata" value="{{student_info.stu_postcode}}" disabled><br>
+
+            <label class="lbdata">Student Course:......</label>
+            <input type="text" class="frmdata" value="{{student_info.stu_course}}" disabled><br>
+
+            <label class="lbdata">Student Term:......</label>
+            <input type="text" class="frmdata" value="{{student_info.stu_term}}" disabled><br>
+        </form>
+
+        {% endblock content %}
+
+    </div>
+</body>

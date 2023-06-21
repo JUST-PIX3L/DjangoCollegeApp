@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Below is setup details for the web page-->
+    <title>Student App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+</head>
+
+<body>
+    <div class="content">
+
+        <!--Navbar for top of page-->
+        <div class="navbar">
+            <a href="/templates/homepage.html">Home Page</a>
+            <a href="/templates/lecturers.html">Lecturers</a>
+            <a href="/templates/students.html">Students</a>
+            <a href="/templates/courses.html">Courses</a>
+        </div>
+
+
+        <!--Block for individual page content-->
+        {% block content %}
+        {% endblock content %}
+
+        
+    <!--Footer class for bottom of page-->
+        <div class="footer">
+            <p>&copy Student Application <a href="/templates/homepage.html">Home Page</a></p>
+        </div>
+
+
+    </div>
+</body>
+</html>

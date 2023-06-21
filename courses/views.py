@@ -4,6 +4,7 @@ from courses.models import *
 def homepage_view(request):
     return render(request, 'homepage.html', {})
 
+
 def students_view(request):
 
     # Return Sensor additional details from DeviceInfo Model
@@ -15,7 +16,6 @@ def students_view(request):
 
     # Return sensor info to html page
     return render(request, page_url, context)
-
 
 
 def lecturers_view(request):
@@ -31,7 +31,6 @@ def lecturers_view(request):
     return render(request, page_url, context)
 
 
-
 def courses_view(request):
 
     # Return Sensor additional details from DeviceInfo Model
@@ -40,6 +39,34 @@ def courses_view(request):
     # Set context and page variables for returning data
     context = {"course_list": course_list}
     page_url = "courses.html"
+
+    # Return sensor info to html page
+    return render(request, page_url, context)
+
+
+
+
+def students_info_view(request):
+
+    # Return Sensor additional details from DeviceInfo Model
+    student_info = Student.objects.get(pk=1)
+
+    # Set context and page variables for returning data
+    context = {"student_info": student_info}
+    page_url = "students_info.html"
+
+    # Return sensor info to html page
+    return render(request, page_url, context)
+
+
+def lecturers_info_view(request):
+
+    # Return Sensor additional details from DeviceInfo Model
+    lecturer_info = Lecturer.objects.get(pk=1)
+
+    # Set context and page variables for returning data
+    context = {"lecturer_info": lecturer_info}
+    page_url = "lecturers_info.html"
 
     # Return sensor info to html page
     return render(request, page_url, context)

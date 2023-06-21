@@ -30,6 +30,7 @@
             <thead>
                 <tr>
                     <!-- Table Headings-->
+                    <th style="width:10%"></th>
                     <th style="width:25%" onclick="sortTable(1)">Lecturer Name</th>
                     <th style="width:25%" onclick="sortTable(2)">Lecturer Email</th>
                     <th style="width:25%" onclick="sortTable(3)">Lecturer Course</th>
@@ -39,6 +40,7 @@
                 {% for lecturer in lecturer_list %}
                 <tr>
                     <!-- Table Data-->
+                    <td class="lecturers_info" id="lecturers_info" onclick="window.location.href = 'lecturers_info.html';" style="text-align:center;"> &#10148; </td>
                     <td>{{ lecturer.lec_name }}</td>
                     <td>{{ lecturer.lec_email }}</td>
                     <td>{{ lecturer.lec_course }}</td>
