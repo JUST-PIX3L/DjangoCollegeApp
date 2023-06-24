@@ -8,6 +8,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+
+    <!--Data table files-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
@@ -50,6 +55,29 @@
         </table>
         <br />
         <hr />
+
+
+        <!--Script to convert html table to functional datatable-->
+        <script>
+            $(document).ready(function () {
+                $('#coursesTable').DataTable({
+                    "info": true,
+                    "scrollY": "500px",
+                    "scrollCollapse": true,
+                    "stateSave": true,
+                    "stateSaveCallback": function (settings, data) {
+                        localStorage.setItem('DataTables_' + settings.sInstance, JSON.stringify(data))
+                    },
+                    "stateLoadCallback": function (settings) {
+                        return JSON.parse(localStorage.getItem('DataTables_' + settings.sInstance))
+                    },
+                    "colReorder": {
+                        "realtime": true,
+                        "fixedColumnsLeft": 1
+                    }
+                });
+            });
+        </script>
 
         <!--Footer class for bottom of page-->
         <div class="footer">
