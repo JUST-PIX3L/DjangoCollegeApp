@@ -44,12 +44,10 @@ def courses_view(request):
     return render(request, page_url, context)
 
 
-
-
 def students_info_view(request):
 
     # Return Sensor additional details from DeviceInfo Model
-    student_info = Student.objects.get(pk=1)
+    student_info = Student.objects.first()
 
     # Set context and page variables for returning data
     context = {"student_info": student_info}
@@ -62,7 +60,7 @@ def students_info_view(request):
 def lecturers_info_view(request):
 
     # Return Sensor additional details from DeviceInfo Model
-    lecturer_info = Lecturer.objects.get(pk=1)
+    lecturer_info = Lecturer.objects.first()
 
     # Set context and page variables for returning data
     context = {"lecturer_info": lecturer_info}
