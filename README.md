@@ -1,7 +1,10 @@
 # DjangoCollegeApp
 
-## Chapter 1 - Django Setup and Basic WebApp
-For this first chapter we are going to setup and create our basic Application for this tutorial series. 
+## Chapter 4 - Django Admin Features
+For this first chapter we are going to setup the Django built in Admin features 
 
 We will cover the following topics as part of this lesson
-* Creating Django Project
+* Creating Super User
+* Accessing Django Admin
+* Updating Admin Views
+* Adding Database Data through Admin UI
