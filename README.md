@@ -4,4 +4,6 @@
 For this first chapter we are going to setup and create our basic Application for this tutorial series. 
 
 We will cover the following topics as part of this lesson
-* Creating Django Project
+* Creating Django Views
+* Creating Django URLs
+* Creating HTML Pages
