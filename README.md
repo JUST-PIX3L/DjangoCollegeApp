@@ -1,7 +1,8 @@
 # DjangoCollegeApp
 
-## Chapter 1 - Django Setup and Basic WebApp
-For this first chapter we are going to setup and create our basic Application for this tutorial series. 
+## Chapter 7 - Improving our Django Views File
+For todays chapter we are going to look at a better way we can setup our Django Views file and how to structure this as if we were woring on a larger scale project to help with managing our code
 
 We will cover the following topics as part of this lesson
-* Creating Django Project
+* Creating Django Views Folder
+* Creating Unique Django Views Files
