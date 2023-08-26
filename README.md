@@ -1,7 +1,10 @@
 # DjangoCollegeApp
 
-## Chapter 1 - Django Setup and Basic WebApp
-For this first chapter we are going to setup and create our basic Application for this tutorial series. 
+## Chapter 8 - Setting up a Datatable on Django App
+Today we are going to look at something external to Django, how we can integrate a Datatable with our App. 
+This will give our table pages a much more professional feel and will make our app look much better
 
 We will cover the following topics as part of this lesson
-* Creating Django Project
+* Datatable Overview
+* Creating our Datatable Scripts
+* Styling our Datatable
