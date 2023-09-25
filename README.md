@@ -20,7 +20,6 @@ The proposed chapters for the project can be seen below with the intention being
 * Chapter 9 - Adding New Data via Python Shell
 * Chapter 10 - Saving/Exporting Data via Files
 * Chapter 11 - Data Entry Forms
-* Chapter 12 - Django Unit Testing
-* Chapter 13 - Creating Django Admin User Roles
-* Chapter 14 - Customising our Django Admin Panel
-* Chapter 15 - Improving our Web App Styling
+* Chapter 12 - Creating Django Admin User Roles
+* Chapter 13 - Customising our Django Admin Panel
+* Chapter 14 - Django Unit Testing
